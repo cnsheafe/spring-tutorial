@@ -1,0 +1,10 @@
+### Exclude IDE Settings
+.gradle
+.settings
+.vscode
+.project
+.classpath
+
+### Exclude buildables
+bin/
+build/
