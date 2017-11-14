@@ -2,8 +2,11 @@
 plugins {
     id 'base'
     id 'java'
+    id 'application'
+    id 'org.springframework.boot' version '1.5.8.RELEASE'
 }
 
+mainClassName = 'hello.Application'
 sourceSets {
     main {
         java {
@@ -32,7 +35,9 @@ repositories {
 
 dependencies {
     compile 'joda-time:joda-time:2.2'
+    compile 'org.springframework.boot:spring-boot-starter-web'
     testCompile 'junit:junit:4.+'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
 jar {
